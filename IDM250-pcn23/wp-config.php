@@ -80,6 +80,8 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', true );
+define('WP_HOME', 'http://localhost');
+define('WP_SITEURL', 'http://localhost');
 
 /* Add any custom values between this line and the "stop editing" line. */
 
@@ -94,3 +96,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
