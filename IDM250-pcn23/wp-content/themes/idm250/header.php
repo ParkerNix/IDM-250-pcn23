@@ -10,6 +10,7 @@
   <?php wp_head(); ?>
 </head>
 <body>
-<?php
-  // Registered this menu in functions.php
-  wp_nav_menu(['theme_location' => 'primary_menu']);
+  <div class="head_wrapper"> 
+    <img src="http://parkerishere.com/IDM250-pcn23/wp-content/uploads/2022/01/artboard_1-1.png" alt="logo" class="logoheader">
+    <?php wp_nav_menu(['theme_location' => 'primary_menu']);?>
+  </div>

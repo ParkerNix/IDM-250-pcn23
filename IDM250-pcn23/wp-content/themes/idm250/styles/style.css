@@ -34,12 +34,12 @@
    font-style: normal;
   }
 
-h1, h2, h3 h4 {
+h1, h2, h3, h4 {
     font-family: 'quicksand', Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
-p, li, a, button {
+p, li, a, button, input {
     font-family: 'open_sans', Arial, Helvetica, sans-serif;
 }
 
@@ -55,19 +55,64 @@ h3 {
     font-size: 1.125rem;
 }
 
+html {
+    background-image: linear-gradient(-150deg, #FF9A62, #D67EFF);
+    height: 100%;
+}
+
+.fill {
+    min-height: 65vh;
+}
+
 /*menus*/
 
 .menu {
     background-color: #E9E9E9;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    align-items: center;
+    gap: 1.5rem;
 }
+
+.head_wrapper {
+    background-color: #E9E9E9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.footer_wrapper{
+    background-color: #E9E9E9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 .menu li {
     list-style-type: none;
+    font-family: "quicksand", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 100%;
 }
 
-.menu a {
+.menu a, .menu a:visited {
     text-decoration: none;
+    color: #000000;
 }
+
+.menu a:hover {
+    color: #8b8b8b;
+}
+
+.menu a:active {
+    color: #333333;
+}
+
+.logoheader {
+    width: 50px;
+}
+

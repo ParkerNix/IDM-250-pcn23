@@ -1,3 +1,5 @@
 <?php get_header(); ?>
-<p>IDM250 project will go here, everything else is somewhere else.</p>
+<div class="fill">
+    <p>IDM250 project will go here, everything else is somewhere else.</p>
+</div>
 <?php get_footer(); ?>
