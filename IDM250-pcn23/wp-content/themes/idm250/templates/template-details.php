@@ -1,3 +1,6 @@
+<?php
+/* Template Name: Details */
+?>
 <?php get_header(); ?>
 <div class="fill">
 <div class="casestudy" id="teado">
