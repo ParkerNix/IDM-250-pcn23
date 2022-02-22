@@ -11,6 +11,9 @@
 </head>
 <body>
   <div class="head_wrapper"> 
-    <img src="http://parkerishere.com/IDM250-pcn23/wp-content/uploads/2022/01/artboard_1-1.png" alt="logo" class="logoheader">
-    <?php wp_nav_menu(['theme_location' => 'primary_menu']);?>
+    <img src="<?php echo get_template_directory_uri() . '/images/artboard_1.png' ?>" alt="logo" class="logoheader">
+    <div class="menuoptions">
+      <?php wp_nav_menu(['theme_location' => 'primary_menu']);?>
+      <?php get_template_part('components/search-form'); ?>
+    </div>
   </div>

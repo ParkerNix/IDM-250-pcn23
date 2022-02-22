@@ -24,4 +24,26 @@
         </div>
     </div>
 </div>
+
+<?php
+    $search_word = $_GET['keyword'];
+
+    $args = [
+        's' => $search_word
+    ];
+    $search_query = new WP_Query($args);
+?>
+
+<h1 class="search">Search Results for "<?php echo $search_word?>"</h1>
+
+<?php
+    if ($search_query->have_posts()) {
+    while ($search_query->have_posts()) : $search_query->the_post();
+        get_template_part('components/teaser');
+    endwhile;
+    wp_reset_postdata();
+   } else {
+      echo '<p>I have no idea what you mean by <?php echo $search_word ?>! Try a different search or something.';
+  } ?>
+
 <?php get_footer(); ?>
