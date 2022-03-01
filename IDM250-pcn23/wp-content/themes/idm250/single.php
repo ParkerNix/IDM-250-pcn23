@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="fill">
 <div class="casestudy" id="teado">
-  <h1 class="title">Redesigning Tea-Do</h1>
+  <!--<h1 class="title">Redesigning Tea-Do</h1>
 
     <div class="leftalign">
         <div class="image">
@@ -77,7 +77,13 @@
                 </tr>
             </table>
         </div>
-        <div class="blank"></div>
+        <div class="blank"></div>-->
+    </div>
+    <h1 class="title"><?php the_title(); ?></h1>
+    <div class="editor">
+      <!-- start content -->
+      <?php the_content(); ?>
+      <!-- end content -->
     </div>
 </div>
 </div>

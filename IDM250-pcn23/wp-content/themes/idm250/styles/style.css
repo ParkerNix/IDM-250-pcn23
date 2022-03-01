@@ -43,7 +43,7 @@ p, li, a, button, input, th, tr, blockquote {
     font-family: 'open_sans', Arial, Helvetica, sans-serif;
 }
 
-blockquote {
+blockquote, .quota{
     font-style: italic;
 }
 
@@ -174,7 +174,7 @@ a:active {
 
 /*details*/
 
-.leftalign, .rightalign {
+.leftalign, .rightalign, .wp-block-group__inner-container {
     display: flex;
     margin: 0 1rem 2rem;
     border-radius: 10px;
@@ -198,6 +198,9 @@ th, tr {
 .image img {
     border-radius: 10px;
     max-width: 634px;
+    height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .text {
@@ -308,8 +311,6 @@ th, tr {
   
   .workbody img, .casestudy img, .casestudy video {
    display: block;
-   margin-left: auto;
-   margin-right: auto;
   }
   
   .task, .middle, .ending {
@@ -373,3 +374,13 @@ th, tr {
     .search {
         text-align: center;
     }
+
+    /*single.php*/
+    .wp-block-image {
+        margin: 0;
+    }
+    @media (min-width: 782px){    
+        .wp-block-column:not(:first-child) {
+        margin-left: 0;
+    }
+}
