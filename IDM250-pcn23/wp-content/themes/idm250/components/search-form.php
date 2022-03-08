@@ -1,5 +1,5 @@
-<form action="/search" method="GET">
-    <input placeholder="Search here!" type="text" name="keyword" value="">
+<form action="<?php echo home_url()?>" method="GET">
+    <input placeholder="Search here!" type="text" name="s" value="">
     <input type="hidden" name="post_type[]" value="idm-projects">
     <button>Go</button>
 </form>

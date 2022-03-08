@@ -203,6 +203,14 @@ th, tr {
     padding: 0;
 }
 
+.video video, .wp-block-video video {
+    border-radius: 10px;
+    max-width: 634px;
+    margin: 0;
+    padding: 0;
+   max-height: 300px; 
+}
+
 .text {
     padding: 0 1rem 1rem;
     max-width: 634px;
@@ -213,7 +221,7 @@ th, tr {
 }
 
 .title {
-    margin: 2rem 1rem;
+    margin: 2rem;
 }
 
 /*404*/

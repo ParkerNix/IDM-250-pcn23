@@ -1,6 +1,3 @@
-<?php
-/* Template Name: Search */
-?>
 <?php get_header(); ?>
 <div class="fill">
     <!--<h1 class="search">Results for<br>"Project"</h1>
@@ -26,7 +23,7 @@
 
 
 <?php
-    $search_word = $_GET['keyword'];
+    $search_word = $_GET['s'];
 
     $args = [
         's' => $search_word
@@ -36,14 +33,19 @@
 
 <h1 class="search">Search Results for "<?php echo $search_word?>"</h1>
 
-<?php
-    if ($search_query->have_posts()) {
-    while ($search_query->have_posts()) : $search_query->the_post();
-        get_template_part('components/teaser');
-    endwhile;
-    wp_reset_postdata();
-   } else {
-      echo '<p>I have no idea what you mean by <?php echo $search_word ?>! Try a different search or something.';
-  } ?>
+<div class="homebuttons">
+    <div class="row">
+        <?php
+            if ($search_query->have_posts()) {
+                while ($search_query->have_posts()) : $search_query->the_post();
+                get_template_part('components/teaser');
+                endwhile;
+                wp_reset_postdata();
+            } else {
+                echo "<p style='margin: 0 2rem;'>I have no idea what you mean by <b>$search_word</b>! Try a different search or something.</p>";
+            } 
+        ?>
+    </div>
+</div>
 </div>
 <?php get_footer(); ?>
