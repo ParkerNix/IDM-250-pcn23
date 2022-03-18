@@ -115,6 +115,10 @@ a:active {
 
 /*menus*/
 
+.searchthing {
+    text-align: right;
+}
+
 .menu {
     display: flex;
     flex-direction: row;
