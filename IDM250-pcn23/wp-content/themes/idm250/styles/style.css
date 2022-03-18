@@ -172,6 +172,28 @@ a:active {
     margin: 0;
 }
 
+.aboutstuff {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #e9e9e954;
+    margin: 2rem;
+}
+
+.aboutimage {
+    max-width: 500px;
+    max-height: 500px;;
+}
+
+.abouttext {
+    max-width: 900px;
+}
+
+.aboutbox {
+    margin: 2rem;
+}
+
 /*details*/
 
 .leftalign, .rightalign, .wp-block-group__inner-container {
