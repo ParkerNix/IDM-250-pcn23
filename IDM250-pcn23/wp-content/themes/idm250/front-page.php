@@ -6,7 +6,12 @@
             <p>You made it to my site!</p>
         </div>
     </div>
-    <div class="homebuttons">
+    <?php while (have_posts()) : the_post(); ?>
+        <div class="homebuttons">
+            <?php the_content(); ?>
+        </div>
+    <?php endwhile; ?>
+    <!--<div class="homebuttons">
         <div class="row">
             <div class="item">
                 <img src="http://parkerishere.com/IDM250-pcn23/wp-content/uploads/2022/01/Alpha.png" alt="original site">
@@ -31,6 +36,6 @@
                 <a href="#">Random It Up ></a>
             </div>
         </div>
-    </div>
+    </div>-->
 </div>
 <?php get_footer(); ?>
